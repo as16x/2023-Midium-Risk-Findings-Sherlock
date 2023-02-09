@@ -11,8 +11,7 @@ Using Chainlink in L2 chains such as Arbitrum requires to check if the sequencer
 The bug could be leveraged by malicious actors to take advantage of the sequencer downtime.
 
 ### Vulnerability Detail
-The new GLPOracle is used the get the the price of GLP. There is no check that the sequencer is down:
-
+The new GLPOracle is used the get the the price of GLP. There is no check that the sequencer is down:<br>
 https://github.com/sherlock-audit/2023-01-sentiment/blob/main/oracle/src/gmx/GLPOracle.sol#L47
 ```Solidity
     function getEthPrice() internal view returns (uint) {
@@ -40,7 +39,7 @@ VS Code
 Manual Review
 
 ### Recommendation
-It is recommended to follow the code example of Chainlink:
+It is recommended to follow the code example of Chainlink:<br>
 https://docs.chain.link/data-feeds/l2-sequencer-feeds#example-code
 
 ### Discussion
