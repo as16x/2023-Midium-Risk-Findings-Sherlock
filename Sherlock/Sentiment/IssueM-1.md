@@ -9,13 +9,13 @@ Bahurum
 
 ### Summary
 ---
-In the controllers RewardRouterController, RewardRouterV2Controller and DNGMXVaultController the function canCall can return in tokenIn a token address that has actually not been received by the account. If the account did not have the token before, than the token is added to the asset list of the account even if the account does not hold the token at all.
+In the controllers `RewardRouterController`, `RewardRouterV2Controller` and `DNGMXVaultController` the function `canCall` can return in `tokenIn` a token address that has actually not been received by the account. If the account did not have the token before, than the token is added to the asset list of the account even if the account does not hold the token at all.
 
 ### Vulnerability Detail
 ---
-in RewardRouterController: in canCallCompound(), WETH is added to tokensIn but no tokens are sent to the account as a result of the call to the Reward Router's function compound()
-in RewardRouterV2Controller: in canCallRedeem() the token redeemed is added to tokensIn, but the router's function unstakeAndRedeemGlp() allows to send the tokens to a 3rd party receiver instead of the caller. In such a case, nop tokens are sent to the account.
-in DNGMXVaultController: in canWithdraw() the token redeemed is added to tokensIn, but the DN GMX vault's functions redeemToken() and withdrawToken() allow to send the tokens to a 3rd party receiver instead of the caller. In such a case, nop tokens are sent to the account.
+in `RewardRouterController`: in `canCallCompound()`, `WETH` is added to `tokensIn` but no tokens are sent to the account as a result of the call to the Reward Router's function `compound()`
+in `RewardRouterV2Controller`: in `canCallRedeem()` the token redeemed is added to `tokensIn`, but the router's function `unstakeAndRedeemGlp()` allows to send the tokens to a 3rd party receiver instead of the caller. In such a case, nop tokens are sent to the account.
+in `DNGMXVaultController`: in `canWithdraw()` the token redeemed is added to `tokensIn`, but the DN GMX vault's functions `redeemToken()` and `withdrawToken()` allow to send the tokens to a 3rd party receiver instead of the caller. In such a case, nop tokens are sent to the account.
 
 ### Impact
 ---
