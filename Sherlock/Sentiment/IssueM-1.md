@@ -1,17 +1,22 @@
 # Issue M-1:
 * [[M-01] Tokens not owned by an account can be added as an asset to the account - Sourse](https://github.com/sherlock-audit/2023-01-sentiment-judging/issues/26)
 ---
-Found by
+### Found by
+---
 Bahurum
 
-Summary
+### Summary
+---
 In the controllers RewardRouterController, RewardRouterV2Controller and DNGMXVaultController the function canCall can return in tokenIn a token address that has actually not been received by the account. If the account did not have the token before, than the token is added to the asset list of the account even if the account does not hold the token at all.
 
-Vulnerability Detail
+### Vulnerability Detail
+---
 in RewardRouterController: in canCallCompound(), WETH is added to tokensIn but no tokens are sent to the account as a result of the call to the Reward Router's function compound()
 in RewardRouterV2Controller: in canCallRedeem() the token redeemed is added to tokensIn, but the router's function unstakeAndRedeemGlp() allows to send the tokens to a 3rd party receiver instead of the caller. In such a case, nop tokens are sent to the account.
 in DNGMXVaultController: in canWithdraw() the token redeemed is added to tokensIn, but the DN GMX vault's functions redeemToken() and withdrawToken() allow to send the tokens to a 3rd party receiver instead of the caller. In such a case, nop tokens are sent to the account.
-Impact
+
+### Impact
+---
 There can be tokens in the list of assets of an account that the account doesn't actually hold. Note that this does not pose any issues for the calculation of collateral.
 
 Code Snippet
@@ -21,8 +26,10 @@ https://github.com/sherlock-audit/2023-01-sentiment/blob/main/controller-55/src/
 
 https://github.com/sherlock-audit/2023-01-sentiment/blob/main/controller-55/src/gmx/RewardRouterV2Controller.sol#L88
 
-Tool used
+### Tool used
+---
 Manual Review
 
-Recommendation
+### Recommendation
+---
 No particular reccommendation.
