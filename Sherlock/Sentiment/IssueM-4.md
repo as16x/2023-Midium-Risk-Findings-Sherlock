@@ -1,18 +1,19 @@
-Issue M-4: No check if Arbitrum L2 sequencer is down in Chainlink feeds
-Source: https://github.com/sherlock-audit/2023-01-sentiment-judging/issues/16
-
-Found by
+# Issue M-4: 
+## [M-04] No check if Arbitrum L2 sequencer is down in Chainlink feeds
+### Source: https://github.com/sherlock-audit/2023-01-sentiment-judging/issues/16
+---
+### Found by
 0xdeadbeef
 
-Summary
+### Summary
 Using Chainlink in L2 chains such as Arbitrum requires to check if the sequencer is down to avoid prices from looking like they are fresh although they are not.
 
 The bug could be leveraged by malicious actors to take advantage of the sequencer downtime.
 
-Vulnerability Detail
+### Vulnerability Detail
 The new GLPOracle is used the get the the price of GLP. There is no check that the sequencer is down:
 https://github.com/sherlock-audit/2023-01-sentiment/blob/main/oracle/src/gmx/GLPOracle.sol#L47
-
+```Solidity
     function getEthPrice() internal view returns (uint) {
         (, int answer,, uint updatedAt,) =
             ethUsdPriceFeed.latestRoundData();
@@ -25,23 +26,23 @@ https://github.com/sherlock-audit/2023-01-sentiment/blob/main/oracle/src/gmx/GLP
 
         return uint(answer);
     }
-Impact
+```
+### Impact
 The impact depends on the usage of the GLP.
 If it is used as part of the collateral for lenders:
 
-Users can get better borrows if the price is above the actual price
-Users can avoid liquidations if the price is under the actual price
-Code Snippet
-Tool used
+- Users can get better borrows if the price is above the actual price
+- Users can avoid liquidations if the price is under the actual price
+### Code Snippet
+### Tool used
 VS Code
-
 Manual Review
 
-Recommendation
+### Recommendation
 It is recommended to follow the code example of Chainlink:
 https://docs.chain.link/data-feeds/l2-sequencer-feeds#example-code
 
-Discussion
+### Discussion
 zobront
 
 Fix confirmed.
