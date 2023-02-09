@@ -1,5 +1,5 @@
 # Issue M-3: 
-## [M-02] PreviewRedeem may under-price the value of the asset
+## [M-02] `PreviewRedeem` may under-price the value of the asset
 ### Source: https://github.com/sherlock-audit/2023-01-sentiment-judging/issues/19
 ---
 ### Found by
@@ -8,7 +8,7 @@ GalloDaSballo
 
 ### Summary
 ---
-previewRedeem will return an incorrect result based on address(0)
+previewRedeem will return an incorrect result based on `address(0)`
 
 If you get the partnership the fee changes, the address could change the value
 This may enable: Unfairer (bps wise), liquidations when they shouldn't happen, also will enable marginally higher profit for liquidators as they may be able to benefit from the reduction of the fee
