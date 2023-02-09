@@ -12,6 +12,7 @@ The bug could be leveraged by malicious actors to take advantage of the sequence
 
 ### Vulnerability Detail
 The new GLPOracle is used the get the the price of GLP. There is no check that the sequencer is down:
+
 https://github.com/sherlock-audit/2023-01-sentiment/blob/main/oracle/src/gmx/GLPOracle.sol#L47
 ```Solidity
     function getEthPrice() internal view returns (uint) {
