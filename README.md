@@ -3,7 +3,11 @@
 <p align="center">
                                 <a href="https://ag0.gitbook.io/cooler-loans/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/01UO5m5.jpeg?raw=true" width="60" height="60" alt="Javascript" /></a></p>    
 
-* [[H-01] Use safeTransfer/safeTransferFrom consistently instead of transfer/transferFrom - Cooler loans - 2023-Feb](https://github.com/sherlock-audit/2023-01-cooler-judging/issues/335)
+* [[M-01] Cooler.roll() wouldn't work as expected when newCollateral = 0. - Cooler loans - 2023-Feb](https://github.com/sherlock-audit/2023-01-cooler-judging/issues/320)
+* [[M-02] Loan is rollable by default - Cooler loans - 2023-Feb](https://github.com/sherlock-audit/2023-01-cooler-judging/issues/265)
+* [[M-03] Repaying loans with small amounts of debt tokens can lead to underflowing in the roll function - 2023-Feb](https://github.com/sherlock-audit/2023-01-cooler-judging/issues/263)
+* [[M-04] Dust amounts can cause payments to fail, leading to default - Cooler loans - 2023-Feb](https://github.com/sherlock-audit/2023-01-cooler-judging/issues/218)
+* [[M-05] DAI/gOHM exchange rate may be stale - Cooler loans - 2023-Feb](https://github.com/sherlock-audit/2023-01-cooler-judging/issues/217)
 ---
 <p align="center">
                                 <a href="https://sentiment.xyz" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/Sentiment%20Update.jpg" width="60" height="60" alt="Javascript" /></a></p>    
