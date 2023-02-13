@@ -2,8 +2,7 @@
 ---
 <p align="center">
                                 <a href="https://ag0.gitbook.io/cooler-loans/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/01UO5m5.jpeg?raw=true" width="60" height="60" alt="Javascript" /></a></p>    
-                                
----
+
 * [[H-01] Use safeTransfer/safeTransferFrom consistently instead of transfer/transferFrom - Cooler loans - 2023-Feb](https://github.com/sherlock-audit/2023-01-cooler-judging/issues/335)
 <p align="center">
                                 <a href="https://sentiment.xyz" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/Sentiment%20Update.jpg" width="60" height="60" alt="Javascript" /></a></p>    
