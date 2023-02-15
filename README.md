@@ -34,4 +34,4 @@
 * [[M-09] Price disparities between spot and perpetual pricing can heavily destabilize UXD - uxd.fi - 2023-Jan](https://github.com/sherlock-audit/2023-01-uxd-judging/issues/305)
 * [[M-10] The `FullMath` library is unable to handle intermediate overflows due to overflow that's desired but never reached - uxd.fi - 2023-Jan](https://github.com/sherlock-audit/2023-01-uxd-judging/issues/273)
 * [[M-11] PerpDepository#_placePerpOrder miscalculates fees paid when shorting - uxd.fi - 2023-Jan](https://github.com/sherlock-audit/2023-01-uxd-judging/issues/271)
-* [[M-12] PerpDepository.netAssetDeposits variable can prevent users to withdraw with underflow error - uxd.fi - 2023-Jan](https://github.com/sherlock-audit/2023-01-uxd-judging/issues/97)
+* [[M-12] PerpDepository.netAssetDeposits variable can prevent users to withdraw with underflow error - uxd.fi - 2023-Jan](https://github.com/sherlock-audit/2023-01-uxd-judging/issues/97) 
