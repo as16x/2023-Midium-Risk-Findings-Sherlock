@@ -1,8 +1,7 @@
 # 2023-Medium-Risk-Findings-Sherlock<br>
 <p align="center">
                                 <a href="https://www.ajna.finance/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/Ajna.jpg" width="60" height="60" alt="Javascript" /></a></p>    
-                                
----
+                               
 * [[M-01] Buypunk function of Cryptopunks in ERC721Pool is used incorrectly - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/163)
 * [[M-02] ERC721Pool taker callback misreports quote funds whenever there was collateral amount rounding - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/162)
 * [[M-03] Anyone can transfer approved LP tokens - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/156)
@@ -25,7 +24,7 @@
 * [[M-20] CryptoKitty and CryptoFighter NFT can be paused, which block borrowing / repaying / liquidating action in the ERC721Pool when borrowers still forced to pay the compounding interest - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/34)
 * [[M-21] Minting an NFT with a position on the same bucket as a previously minted NFT changes its deposit time - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/19)
 * [[M-22] Memorializing an NFT position on the same bucket of a previously memorialized NFT locks redemption - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/13)
-
+---
 <p align="center">
                                 <a href="https://ag0.gitbook.io/cooler-loans/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/01UO5m5.jpeg?raw=true" width="60" height="60" alt="Javascript" /></a></p>    
 
