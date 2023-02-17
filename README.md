@@ -1,10 +1,14 @@
 # 2023-Medium-Risk-Findings-Sherlock<br>
----
 <p align="center">
                                 <a href="https://www.ajna.finance/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/Ajna.jpg" width="60" height="60" alt="Javascript" /></a></p>    
                                 
 ---
-* [[H-01] RewardsManager doesn't delete old bucket snapshot info on unstaking - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/183)
+* [[M-01] Buypunk function of Cryptopunks in ERC721Pool is used incorrectly - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/163)
+* [[M-02] ERC721Pool taker callback misreports quote funds whenever there was collateral amount rounding - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/162)
+* [[M-03] Anyone can transfer approved LP tokens - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/156)
+* [[M-04] Incorrect MOMP calculation in neutral price calculation - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/148)
+* [[M-05] Extraordinary proposals can receive more tokens than eligible - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/124)
+* [[M-06] Claiming rewards from a future not yet existing epoch prevents claiming rewards for those epochs later on - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/124)
 <p align="center">
                                 <a href="https://ag0.gitbook.io/cooler-loans/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/01UO5m5.jpeg?raw=true" width="60" height="60" alt="Javascript" /></a></p>    
 
