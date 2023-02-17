@@ -9,6 +9,23 @@
 * [[M-04] Incorrect MOMP calculation in neutral price calculation - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/148)
 * [[M-05] Extraordinary proposals can receive more tokens than eligible - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/124)
 * [[M-06] Claiming rewards from a future not yet existing epoch prevents claiming rewards for those epochs later on - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/124)
+* [[M-07] Calculating new rewards is susceptible to precision loss due to division before multiplication - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/121)
+* [[M-08] Claiming accumulated rewards while the contract is underfunded can lead to a loss of rewards - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/120)
+* [[M-09] [M] Incorrect Validation in Pool.sol#transferLPs lead to a DOS attack - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/116)
+* [[M-10] Adversary can grief kicker by frontrunning kickAuction call with a large amount of loan - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/111)
+* [[M-11] Settled collateral of a borrower aren't available for lenders until borrower's debt is fully cleared - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/104)
+* [[M-12] Deposits are eliminated before currently unclaimed reserves when there is no reserve auction - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/102)
+* [[M-13] Flashloan end result isn't controlled - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/101)
+* [[M-14] Interest rates can be raised above the market as a griefing, disabling the pool - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/100)
+* [[M-15] Interest rate for pool is bounded wrongly - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/96)
+* [[M-16] Auction timers following liquidity can fall through the floor price causing pool insolvency - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/76)
+* [[M-17] If borrower or kicker got blacklisted by asset contract their collateral or bond funds can be permanently frozen with the pool - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/75)
+* [[M-18] user can drawDebt that is below dust amount - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/70)
+* [[M-19] Quadratic voting tally done wrong - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/64)
+* [[M-20] CryptoKitty and CryptoFighter NFT can be paused, which block borrowing / repaying / liquidating action in the ERC721Pool when borrowers still forced to pay the compounding interest - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/34)
+* [[M-21] Minting an NFT with a position on the same bucket as a previously minted NFT changes its deposit time - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/19)
+* [[M-22] Memorializing an NFT position on the same bucket of a previously memorialized NFT locks redemption - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/13)
+
 <p align="center">
                                 <a href="https://ag0.gitbook.io/cooler-loans/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/01UO5m5.jpeg?raw=true" width="60" height="60" alt="Javascript" /></a></p>    
 
