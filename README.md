@@ -40,4 +40,4 @@
                                 <a href="https://illuminate-app.vercel.app/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/Illuminate.png" width="60" height="60" alt="Javascript" /></a></p>    
                                 
 * [[M-01] ERC5095 has not approved MarketPlace to spend tokens in ERC5095 - illuminate-app - 2023-Jan](https://github.com/sherlock-audit/2023-01-illuminate-judging/issues/23)
-* [[M-02] Protocol fees not taken on premium - illuminate-app - 2023-Jan]https://github.com/sherlock-audit/2023-01-illuminate-judging/issues/22)
+* [[M-02] Protocol fees not taken on premium - illuminate-app - 2023-Jan](https://github.com/sherlock-audit/2023-01-illuminate-judging/issues/22)
