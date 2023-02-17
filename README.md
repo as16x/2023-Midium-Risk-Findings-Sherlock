@@ -35,3 +35,9 @@
 * [[M-10] The `FullMath` library is unable to handle intermediate overflows due to overflow that's desired but never reached - uxd.fi - 2023-Jan](https://github.com/sherlock-audit/2023-01-uxd-judging/issues/273)
 * [[M-11] PerpDepository#_placePerpOrder miscalculates fees paid when shorting - uxd.fi - 2023-Jan](https://github.com/sherlock-audit/2023-01-uxd-judging/issues/271)
 * [[M-12] PerpDepository.netAssetDeposits variable can prevent users to withdraw with underflow error - uxd.fi - 2023-Jan](https://github.com/sherlock-audit/2023-01-uxd-judging/issues/97) 
+---
+<p align="center">
+                                <a href="https://illuminate-app.vercel.app/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/Illuminate.png" width="60" height="60" alt="Javascript" /></a></p>    
+                                
+* [[M-01] ERC5095 has not approved MarketPlace to spend tokens in ERC5095 - illuminate-app - 2023-Jan](https://github.com/sherlock-audit/2023-01-illuminate-judging/issues/23)
+* [[M-02] Protocol fees not taken on premium - illuminate-app - 2023-Jan]https://github.com/sherlock-audit/2023-01-illuminate-judging/issues/22)
