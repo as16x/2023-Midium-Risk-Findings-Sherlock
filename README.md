@@ -1,6 +1,11 @@
 # 2023-Medium-Risk-Findings-Sherlock<br>
 ---
 <p align="center">
+                                <a href="https://www.ajna.finance/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/Ajna.jpg" width="60" height="60" alt="Javascript" /></a></p>    
+                                
+---
+* [[H-01] RewardsManager doesn't delete old bucket snapshot info on unstaking - ajna.finance - 2023-Feb](https://github.com/sherlock-audit/2023-01-ajna-judging/issues/183)
+<p align="center">
                                 <a href="https://ag0.gitbook.io/cooler-loans/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/as16x/2023-Midium-Risk-Findings-Sherlock/main/Sherlock/01UO5m5.jpeg?raw=true" width="60" height="60" alt="Javascript" /></a></p>    
 
 * [[M-01] Cooler.roll() wouldn't work as expected when newCollateral = 0. - Cooler loans - 2023-Feb](https://github.com/sherlock-audit/2023-01-cooler-judging/issues/320)
